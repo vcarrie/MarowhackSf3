@@ -1,0 +1,12 @@
+transfert_index:
+    path:     /transfert
+    defaults: { _controller: TransfertBundle:Transfert:index }
+
+transfert_get_files:
+    path:     /transfert/getfiles
+    defaults: { _controller: TransfertBundle:Transfert:getFiles }
+
+
+transfert_get_file:
+    path:     /transfert/getfile/{code}
+    defaults: { _controller: TransfertBundle:Transfert:getFile }

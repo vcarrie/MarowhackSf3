@@ -1,0 +1,11 @@
+site_homepage:
+    path:     /
+    defaults: { _controller: SiteBundle:Site:index }
+
+site_dunsparce:
+    path:     /dunsparce
+    defaults: { _controller: SiteBundle:Site:dunsparce }
+
+site_drifblim:
+    path:     /drifblim
+    defaults: { _controller: SiteBundle:Site:drifblim }

@@ -1,0 +1,51 @@
+{% extends 'SiteBundle::layout.html.twig' %}
+
+
+{% block body %}
+<div class="row-fluid">
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-6">
+       <div class="row-fluid">
+            <div style="text-align: center;font-size: 18px;padding: 4%">Links</div>
+       </div>
+        <div class="row-fluid">
+            <div class="col-md-3 item-home">
+                <a target="_blank" href="http://listin.arkanii.fr">
+                    <img class="img_choice_player1" src="{{ asset('bundles/site/img/listin_logo.png') }}" alt="logo listin">
+                </a>
+                <br>
+                List'In
+            </div>
+            <div class="col-md-3 item-home">
+                <a href="{{ path('site_drifblim') }}">
+                    <img src="{{ asset('bundles/site/img/drifblim.png') }}" alt="logo drifblim">
+                </a>
+                <br>
+                Drifblim
+            </div>
+            <div class="col-md-3 item-home">
+                <a href="{{ path('site_dunsparce') }}">
+                    <img src="{{ asset('bundles/site/img/dunsparce.png') }}" alt="logo dunsparce">
+                </a>
+                <br>
+                Dunsparce
+            </div>
+            <div class="col-md-3 item-home">
+                <a href="">
+                    <img src="{{ asset('bundles/site/img/brawl.png') }}" alt="logo brawl">
+                </a>
+                <br>
+                Brawl
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-md-3"></div>
+
+
+</div>
+{% endblock %}

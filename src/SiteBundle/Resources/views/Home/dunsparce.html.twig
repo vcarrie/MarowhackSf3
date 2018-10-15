@@ -1,0 +1,25 @@
+{% extends 'SiteBundle::layout.html.twig' %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/site/js/site_dunsparce.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="col-md-6 col-md-offset-2" id="container">
+        <button id="start-race">Let's Race!</button><div id="timer_div" class="timer">Hold on!</div>
+        <div id="animation">
+            <img src="{{ asset('bundles/site/img/206.png') }}" alt="">
+        </div>
+        <div id="animation1">
+            <img src="{{ asset('bundles/site/img/206.png') }}" alt="">
+        </div>
+        <div id="animation2">
+            <img src="{{ asset('bundles/site/img/206.png') }}" alt="">
+        </div>
+
+    </div>
+
+{% endblock %}

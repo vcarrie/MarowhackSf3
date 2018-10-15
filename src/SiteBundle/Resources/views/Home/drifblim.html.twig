@@ -1,0 +1,39 @@
+{% extends 'SiteBundle::layout.html.twig' %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/site/js/site_drifblim.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tools/jquery-ui/jquery-ui.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="row-fluid">
+        <div class="col-md-5">
+
+        </div>
+
+        <div class="col-md-7">
+            <div id="conteneur">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><img class="image-drifblim" width='40%' src="{{ asset('bundles/site/img/426.png') }}" alt=""></li>
+                                <li><img class="image-drifblim" width='40%' src="{{ asset('bundles/site/img/426.png') }}" alt=""></li>
+                                <li><img class="image-drifblim" width='40%' src="{{ asset('bundles/site/img/426.png') }}" alt=""></li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

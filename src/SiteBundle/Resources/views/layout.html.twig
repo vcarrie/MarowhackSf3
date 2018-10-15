@@ -1,0 +1,56 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Marowhack - {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/site/css/site.css') }}">
+
+{% endblock %}
+
+{% block header %}
+
+    <div class="banner">
+        <div class="col-md-12" >
+            <a href="{{ path('site_homepage') }}">
+                <img src="{{ asset('bundles/site/img/logo_marowhack.png') }}" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="col-md-12 header-menu">
+            <ul>
+                <li>
+                    <a href="{{ path('site_homepage') }}">
+                        Réalisations
+                    </a>
+
+                </li><li>
+                    <a href="{{ path('site_dunsparce') }}">
+                        Brawl
+                    </a>
+                </li><li>
+                    <a href="{{ path('transfert_index') }}">
+                        Transfert
+                    </a>
+                </li><li class="far-right">
+                    <a href="{{ path('site_dunsparce') }}">
+                        A propos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block footer %}
+    <div class="row-fluid">
+        <div class="col-md-12 footer-menu">
+            <div>2017-2018</div>
+        </div>
+    </div>
+{% endblock %}
+
